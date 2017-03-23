@@ -1,0 +1,118 @@
+body {
+    background-color: #F5F5F5;
+}
+h1 {
+    color: blue;
+}
+p {
+
+        color: #202020 !important;
+}
+img{
+	width:30px;
+	height:30px;
+		
+}
+.buton{
+	margin-left:30%;
+	
+}
+.demo-card-wide.mdl-card {
+  width: 512px;
+  margin-top:5%;
+  margin-left:3%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('https://getmdl.io/assets/demos/welcome_card.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.margin{
+	padding-top: 16%;
+    padding-left: 47%;
+    padding-bottom: 36px;
+	
+}
+.textarea {
+        border: 0 none white;
+    overflow: hidden;
+    outline: none;
+    background-color: white;
+    rows: 10;
+    height: 120px;
+    width: 800px;
+    margin-bottom: 4%;
+    margin-left: 57%;
+    margin-top: -6%;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+}
+.text{
+	margin-left:30%;
+	    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.text2{
+
+    margin-top: -11%;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+
+    float: right;
+    margin-right:34%
+}
+}
+.mdl-button.mdl-button--colored {
+    color: rgb(76,175,80);
+    margin-left: 85%;
+}
+.mare{
+    width: 1028px;
+    height: 128px;
+}
+.poza{
+	
+	width:180px;
+	height:50px;
+
+	
+}
+.icon{
+    width: 918px;
+ height: 103px; 
+
+    margin-top: 5%;
+
+}
+
+.imagine{
+	
+	
+	
+}
+.demo-card-wide.mdl-card {
+    width: 1024px;
+    margin-left: 23%;
+}
+.bar{
+-webkit-box-shadow: 0px 3px 5px -1px rgba(150,145,150,1);
+-moz-box-shadow: 0px 3px 5px -1px rgba(150,145,150,1);
+box-shadow: 0px 3px 5px -1px rgba(150,145,150,1);
+}
+
+.poza2{
+	
+	    width: 130px;
+    height: 39px;
+    padding-left: 3%;
+    padding-top: 5%;
+    padding-right:4%;
+    padding-bottom:3%
+
+	
+}

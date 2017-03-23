@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="google-signin-client_id" content="278489977101-72jm5oatfggbrapbdu8chulo8i3pj4gt.apps.googleusercontent.com/">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+	 <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.green-light_green.min.css" /> 
+	 <script defer src="https://apis.google.com/js/platform.js"></script>
+	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+     
+   
+     
+  <script src="https://apis.google.com/js/api:client.js"></script>
+  
+  <script>
+  var googleUser = {};
+  var startApp = function() {
+    gapi.load('auth2', function(){
+      // Retrieve the singleton for the GoogleAuth library and set up the client.
+      auth2 = gapi.auth2.init({
+        client_id: '278489977101-72jm5oatfggbrapbdu8chulo8i3pj4gt.apps.googleusercontent.com',
+        cookiepolicy: 'single_host_origin',
+        // Request scopes in addition to 'profile' and 'email'
+        //scope: 'additional_scope'
+      });
+      attachSignin(document.getElementById('customBtn'));
+    });
+  };
+
+  function attachSignin(element) {
+    console.log(element.id);
+    auth2.attachClickHandler(element, {},
+        function(googleUser) {
+          document.getElementById('name').innerText = "Signed in: " +
+              googleUser.getBasicProfile().getName();
+      
+        }, function(error) {
+          alert(JSON.stringify(error, undefined, 2));
+        });
+  }
+  </script>
+  <style type="text/css">
+    #customBtn {
+      display: inline-block;
+      background: white;
+      color: #444;
+      width: 190px;
+      border-radius: 5px;
+      border: thin solid #888;
+      box-shadow: 1px 1px 1px grey;
+      white-space: nowrap;
+    }
+    #customBtn:hover {
+      cursor: pointer;
+    }
+    
+   
+    span.label {
+      font-family: serif;
+      font-weight: normal;
+    }
+    span.icon {
+   
+      display: inline-block;
+      vertical-align: middle;
+      width: 42px;
+      height: 42px;
+    }
+    span.buttonText {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 42px;
+      padding-right: 42px;
+      font-size: 14px;
+      font-weight: bold;
+      /* Use the Roboto font that is loaded in the <head> */
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+  </head>
+  <body>
+  
+
+	
+  
+    <!-- Colored raised button -->
+
+
+  <!-- In the callback, you would hide the gSignInWrapper element on a
+  successful sign in -->
+  
+  <div id="gSignInWrapper" class ="margin">
+  
+     
+      <script>startApp();</script>
+       <img src = "http://1.bp.blogspot.com/-iDsvmX9f_o4/V3KWB8wZOrI/AAAAAAACkNU/OvQkEc_Ceh47e_n505zE9YyAI07524y_QCK4B/s1600/Raiffeisen_Bank.svg.png" class= "poza">
+     <p><b>Balance Scorecard</b></p>
+      <table>
+      <tr>
+         <td> <a href="guestbook2" id ="customBtn"  class="mdl-button mdl-js-button mdl-button--raised"> <img src ="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" class= "img">  Sign in</a></td>     
+      </tr>
+      </table>
+     
+
+  </div>
+  <div id="name"></div>
+  <script>startApp();</script>
+
+</body>
+</html>
+  
+ 
